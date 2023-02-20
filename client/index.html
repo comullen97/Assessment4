@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Back End Assessment</title>
+  </head>
+  <body class="container">
+    <header>
+      <h1>Skydiving License Prep</h1>
+      <button id="complimentButton">Get a compliment</button>
+    </header>
+
+    <main>
+      <form id="check-list">
+      <input
+          type="text"
+          id="toDo"
+          placeholder="Step for next jump."/>
+      <div id="#priority">
+        <label for="type">Complete by:</label>
+          <select id="type" name="task_time">
+              <option value="Week-before">Week Before</option>
+              <option value="Day-before">Day Before</option>
+              <option value="Night-before">Night Before</option>
+              <option value="morning">Morning of</option>
+            </select>
+          </div>
+          <button>Add Step</button>
+    </form>
+
+    <section id="jump-count">
+        <h4>Jump Count<br/>A License</h4>
+        <div id="count-container">
+          <label for="one">
+              <input
+                  type="radio"
+                  name="jump"
+                  value="1"
+                  id="one"/>
+              1
+          </label>
+    </section>
+
+    <section id="main-container"></section>
+
+  </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+</html>
